@@ -3,6 +3,7 @@ package application;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+import chess.ChessMatch;
 import chess.ChessPiece;
 import chess.ChessPosition;
 import chess.Color;
@@ -47,6 +48,14 @@ public class UI {
 			throw new InputMismatchException("Error reading chess position. Value must be between a1 & h8.");
 		}
 	
+	}
+	
+	public static void printMatch(ChessMatch chessmatch) {
+		printBoard(chessmatch.getPieces());
+		System.out.println();
+		System.out.println("Turn: " + chessmatch.getTurn());
+		System.out.println("Waiting player: " + chessmatch.getCurrentPlayer());
+		
 	}
 
 	public static void printBoard(ChessPiece[][] pieces) {
