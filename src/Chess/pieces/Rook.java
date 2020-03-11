@@ -1,7 +1,7 @@
-package Chess.pieces;
+package chess.pieces;
 
-import Chess.ChessPiece;
-import Chess.Color;
+import chess.ChessPiece;
+import chess.Color;
 import boardgame.Board;
 
 public class Rook extends ChessPiece {
